@@ -1,0 +1,10 @@
+{
+    "/assets/dist/admin/scripts.js": "/assets/dist/admin/scripts.js",
+    "/assets/dist/book/scripts.js": "/assets/dist/book/scripts.js",
+    "/assets/dist/exec/scripts.js": "/assets/dist/exec/scripts.js",
+    "/assets/dist/leaderboard/scripts.js": "/assets/dist/leaderboard/scripts.js",
+    "/assets/dist/leaderboard/styles.css": "/assets/dist/leaderboard/styles.css",
+    "/assets/dist/exec/styles.css": "/assets/dist/exec/styles.css",
+    "/assets/dist/book/styles.css": "/assets/dist/book/styles.css",
+    "/assets/dist/admin/styles.css": "/assets/dist/admin/styles.css"
+}

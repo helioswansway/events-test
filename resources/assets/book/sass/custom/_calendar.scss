@@ -1,0 +1,31 @@
+#calendar{
+
+    a{
+        color: $sister-colour;
+        text-decoration: none;
+    }
+}
+
+.fc-col-header-cell{
+
+    a{
+        color: #000000 !important;
+
+    }
+}
+
+.fc .fc-bg-event{
+    background-color: #868b8f !important;
+    cursor: pointer !important;
+
+}
+
+
+.fc-col-header-cell {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    background-color: lighten(#2C3E50, 70%) !important;
+    color:#000 !important;
+}
+
+

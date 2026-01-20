@@ -1,0 +1,31 @@
+.js-open-time-wrapper, .js-close-time-wrapper, .js-interval-wrapper, .js-appointment-time-wraper, .js-appointment-dates-wraper, .js-appointment-customer-wraper{
+    position: static;
+    display: none;
+    overflow-y: auto;
+    background: #FFF;
+    top: 46px;
+    box-shadow: 0 4px 10px #9f9e9e;
+    height: 200px;
+    width: 90%;
+    padding: 10px;
+    z-index: 10;
+
+    span, div{
+        display: block;
+        cursor: pointer;
+        line-height: 30px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    div{
+        cursor: default;
+    }
+}
+
+.js-interval-wrapper{
+    height: 100px;
+}
+
+.js-appointment-time-wraper,  .js-appointment-dates-wraper, .js-appointment-customer-wraper{
+    top: 80px;
+}

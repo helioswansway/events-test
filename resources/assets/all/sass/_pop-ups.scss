@@ -1,0 +1,109 @@
+.pop-up-wrapper-spin{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgba(#000000, 0.5);
+    z-index: 1000;
+}
+.pop-up-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100000;
+    padding: 50px 15px 50px 30px;
+
+
+    .js-close{
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        z-index: 200;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-weight: bold;
+        width: 25px;
+        height: 25px;
+        background: $other-colour;
+        text-align: center;
+        line-height: 25px;
+        font-size: 12px;
+        border-radius: 5px;
+
+        &:hover{
+            background: lighten($other-colour, 40%);
+        }
+    }
+
+    .js-appointment{
+        background-color: #FFF;
+        box-shadow: 0 0px 50px rgba(30, 80, 230, 0.4);
+
+        .pop-up-close{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            z-index: 200;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+            width: 25px;
+            height: 25px;
+            background: $brand-colour;
+            text-align: center;
+            line-height: 25px;
+            font-size: 12px;
+            border-radius: 5px;
+
+            &:hover{
+                background: lighten($brand-colour, 20%);
+            }
+        }
+
+    }
+
+
+
+    .js-execs, .js-date{
+        position: fixed;
+        top: 100px;
+        background-color: #FFF;
+        padding: 0 !important;
+        box-shadow: 0 0px 100px $other-colour;
+        border: 5px solid lighten($side-nav-colour, 50%);
+        height: 500px;
+        //overflow-y: scroll;
+
+
+        .pop-up-close{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            z-index: 200;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-weight: bold;
+            width: 25px;
+            height: 25px;
+            background: $other-colour;
+            text-align: center;
+            line-height: 25px;
+            font-size: 12px;
+            border-radius: 5px;
+
+            &:hover{
+                background: lighten($other-colour, 40%);
+            }
+        }
+
+    }
+
+}

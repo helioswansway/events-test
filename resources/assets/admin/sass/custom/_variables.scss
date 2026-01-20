@@ -1,0 +1,59 @@
+
+// Body
+$body-bg: #fafafc;
+
+// Typography
+$font-family-sans-serif: "Manrope", sans-serif;
+$font-size-base: 0.8rem;
+$line-height-base: 1.6;
+
+
+/*
+######################################################
+# Colors
+######################################################
+*/
+$brand-colour:          #003158  !default; //blue
+$sister-colour:         #f36e35 !default;
+$brother-colour:        #adcee1  !default;
+
+//########################################
+//$other-colour:          #242831 !default;
+//$other-colour:          #313541 !default;
+//$other-colour:          #2d2b53 !default;
+$other-colour:          #292929 !default;
+
+
+$primary:               #27b4a8 !default;
+$secondary:             #939aa1 !default;
+$success:               #3fba8d !default;
+$info:                  #1879b1 !default;
+$warning:               #ffb120 !default;
+$danger:                #ca1111 !default;
+$light:                 #e2e5e5 !default;
+$dark:                  #212529 !default;
+
+//Dashboard panel colours
+$top-nav-colour:        $brand-colour !default;
+$side-nav-colour:       #fafafc !default;
+$header-colour:         $other-colour;
+$link-colour:           $brand-colour;
+
+$card-title-colour:   #dee2e6;
+$card-title-colour-1: #26d9b2;
+$card-title-colour-2: #58b6d0;
+$card-title-colour-3: #f7c96b;
+$card-title-colour-4: #f7c96b;
+$card-title-colour-5: #313541;
+
+
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;

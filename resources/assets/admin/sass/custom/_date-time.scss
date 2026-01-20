@@ -1,0 +1,117 @@
+.js-open-time-wrapper, .js-close-time-wrapper, .js-interval-wrapper, .js-appointment-dates-wraper, .js-appointment-execs-wraper, .js-time-wraper{
+    position: static;
+    display: none;
+    overflow-y: auto;
+    background: #FFF;
+    top: 46px;
+    box-shadow: 0 4px 10px #9f9e9e;
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+
+    span{
+        display: block;
+        cursor: pointer;
+        line-height: 30px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+}
+
+.js-interval-wrapper{
+    height: 100px;
+}
+
+
+//Date containers
+
+.date-container, .view-date, .view-date, .view-exec, .display-date,.delete-date{
+    float:left;
+ }
+
+.date-container{
+
+    margin: 0 5px;
+    margin-bottom: 5px;
+    border: 1px solid #d7d7d7;
+    padding: 0 5px;
+    border-radius: 5px;
+
+    &.active{
+
+        background-color: $sister-colour;
+        color: #FFFFFF;
+        border: 1px solid lighten($sister-colour, 50%);
+
+        .view-exec{
+             i{
+                 color: lighten($warning, 20%);
+
+             }
+        }
+
+
+        .disabled{
+            color: #000000 !important;
+            background: lighten($sister-colour, 80%);
+        }
+
+        .delete-date{
+            color: #FFFFFF;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
+}
+
+.view-date {
+    padding: 0px 1px!important;
+    margin-right: 0px;
+    margin-top: 5px !important;
+    border-radius: 5px;
+    color: $sister-colour;
+    border: 1px solid lighten($sister-colour, 30%);
+
+    &:hover{
+        background: lighten($sister-colour, 30%);
+    }
+
+
+}
+
+.view-exec{
+    padding: 0px 5px!important;
+    margin-top:0px !important;
+
+    //margin-right: 5px;
+}
+
+.display-date{
+    margin: 5px 10px 5px 0px;
+    font-weight: bold;
+}
+
+.delete-date{
+    margin: 5px 0;
+    color: $danger;
+
+    &:hover{
+        color: lighten($danger, 30%);;
+    }
+}
+
+.btn-date{
+    float: left;
+    padding: 2px 4px;
+    border-radius: 5px;
+    border: 1px solid $warning;
+
+    &:hover{
+        background-color: $warning;
+        color: #FFFFFF;
+
+    }
+}

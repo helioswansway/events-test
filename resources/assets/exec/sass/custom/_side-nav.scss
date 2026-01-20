@@ -1,0 +1,242 @@
+/*
+/#############################################
+/ Side nav
+/#############################################
+*/
+
+
+.sideNav{
+    position: fixed;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    z-index: 999;
+    width: 300px;
+    background-color: $side-nav-colour !important;
+    background-size: cover;
+    color: $brand-colour;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+
+
+    .hr-1{
+        padding: 5px 20px;
+        background: lighten($side-nav-colour, 20%);
+    }
+
+    hr{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-top: 1px solid $side-nav-colour;
+        border-bottom: 1px solid lighten($side-nav-colour, 30%);
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        z-index: 1000;
+        position: relative;
+
+
+    }
+
+    header{
+        text-transform: uppercase;
+        display: block;
+        height: 60px;
+        z-index: 1000;
+        background-color: $brand-colour !important;
+    }
+
+    .logo{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 1000;
+
+        img{
+          width: 40%;
+
+        }
+
+    }
+
+    .header{
+       // background: #111;
+        background: $side-nav-colour;
+        padding: 0.6rem 0.5rem;
+        text-transform: uppercase;
+        position: relative;
+        font-size: 110%;
+        font-weight: bold;
+        border-bottom: 1px solid lighten($side-nav-colour, 30%);
+
+
+        .fas{
+            font-size: 120%;
+            width: auto;
+        }
+
+    }
+
+    li{
+        padding: 0;
+
+       a{
+
+            background: rgba(darken($side-nav-colour, 8%), 0.3) ;
+            padding-top: 0.4rem;
+            display: block;
+            color: $brand-colour;
+            padding-left: 20px;
+            border-bottom: 1px solid lighten($side-nav-colour, 5%);
+            line-height: 36px;
+            text-decoration: none;
+
+            &:hover{
+                background: rgba(lighten($side-nav-colour, 4%), 0.5) ;
+                color: $sister-colour;
+                text-decoration: none;
+                .fa-angle-right{
+                    display: block;
+                }
+            }
+
+            &.active{
+                background: rgba(lighten($side-nav-colour, 4%), 0.5) ;
+                color: $sister-colour;
+                text-decoration: none;
+                padding-left: 50px;
+                .fa-angle-right{
+                    display: block;
+                }
+            }
+       }
+
+       .fa-angle-right{
+           float: right;
+           margin-top: 10px;
+           display: none;
+       }
+
+       .fas, .far, .fab, .side-nav-icon {
+
+            width: 30px;
+            font-size: 140%;
+        }
+
+    }
+
+    .js-close{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background: $sister-colour;
+        color: #FFFFFF;
+        padding: 2px 8px;
+        line-height: 20px;
+        cursor: pointer;
+        font-size: 80%;
+        border-radius: 0.2rem;
+        z-index: 1000;
+
+        &:hover{
+            opacity: 0.7;
+        }
+
+    }
+
+
+
+    .js-dropdown-menu{
+        padding-left: 20px !important;
+        display: none;
+        li {
+
+            a{
+
+
+                .fa-angle-right{
+                    margin-top: 4px;
+                }
+
+            }
+        }
+    }
+
+
+}
+
+
+.side-nav-close{
+    width: 80px;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+
+    span{
+        display: none!important;
+    }
+
+    .basic-ul{
+        text-align: center !important;
+
+        li{
+            a{
+              padding-left: 0!important;
+            }
+        }
+    }
+}
+
+.side-nav-full{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+.js-sidenav-dev-active{
+
+    .js-dropdown-menu{
+       // display: block;
+
+    }
+}
+
+.js-side-nav-collapse {
+    padding: 10px 5px;
+    padding-bottom: 5px;
+    width: 48px;
+    background-color: $sister-colour;
+    position: fixed;
+    left: -30px;
+    top: 14px;
+    text-align: center;
+    border-radius: .2rem;
+    border: 1px solid lighten($sister-colour, 15%);
+    cursor: pointer;
+    opacity: 1;
+    display:none;
+    z-index: 10000;
+    animation-delay: 0.3s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.main-content-full{
+    margin-left: 0px!important;
+    padding-left: 80px!important;
+}
+
+.main-content-close{
+    margin-left: 300px!important;
+    padding-left: 0px!important;
+}
+

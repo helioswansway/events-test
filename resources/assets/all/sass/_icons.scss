@@ -1,0 +1,65 @@
+.icon-list{
+    margin-left: 5px;
+    display: inline-block;
+}
+.icon-name{
+    margin-right:3px;
+    display: inline-block;
+}
+
+.icon{
+       display: inline;
+}
+
+.booked-circle{
+    border-radius: 50%;
+    display: inline-block ;
+    height: 15px;
+    width: 15px;
+    margin-bottom: -2px;
+}
+
+.landing-icons{
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+
+    a{
+        display:inline-block;
+        transition: 1s;
+
+
+        &:hover{
+            text-decoration: none;
+
+            img{
+               opacity: 1;
+              // border-radius: 100px;
+               box-shadow: 0 0.125rem 2rem rgb(0 0 0 / 8%) !important;
+               border: 2px solid #e7e7e7;
+
+            }
+
+            .icon-title{
+                color: $sister-colour;
+            }
+        }
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+        opacity: 0.5;
+        transition: 1.5s;
+        border: 2px solid #FFFFFF;
+    }
+
+}
+
+.icon-title{
+    color: $brother-colour;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 900;
+    transition: 1s;
+}

@@ -1,0 +1,58 @@
+/*!
+ * jQuery UI Accordion 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/accordion/#theming
+ */
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 1px 0 0 0;
+	//padding: .5em .5em .5em .7em;
+	font-size: 90% !important;
+
+    .btn{
+        transition: none !important;
+        color: $brand-colour !important;
+
+        &:hover{
+            color: #FFF !important;
+        }
+    }
+
+    .btn-default{
+        color: #FFF !important;
+    }
+
+    .sister{
+        color: $sister-colour !important;
+    }
+
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+
+
+.accordion-message .ui-state-active {
+    .btn{
+        color: $brand-colour !important;
+    }
+
+    .btn-default{
+        color: #FFF !important;
+    }
+
+    .sister{
+        color: $sister-colour !important;
+    }
+
+
+}

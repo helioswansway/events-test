@@ -1,0 +1,21 @@
+.mob-space{
+    display: none;
+    margin: 5px 0;
+}
+
+//Mobile Spacer
+
+@media screen and (max-width: 992px){
+
+    .mob-space{
+        display: table;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+
+}
+

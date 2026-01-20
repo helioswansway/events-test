@@ -1,0 +1,130 @@
+.bg-brand{
+
+    background-color: $brand-colour!important;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($brand-colour, 30%) !important;
+          color: $brand-colour;
+        }
+    }
+}
+
+.bg-sister{
+    background-color: $sister-colour!important;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($sister-colour, 30%) !important;
+          color: $sister-colour;
+        }
+
+    }
+}
+
+.bg-brother{
+    background-color: $brother-colour!important;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($brother-colour, 30%) !important;
+          color: $brother-colour;
+        }
+    }
+
+}
+
+.bg-other{
+    background-color: $other-colour!important;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($other-colour, 20%) !important;
+          color: $other-colour;
+        }
+    }
+
+}
+
+.bg-success{
+    background-color: $success!important;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($success, 20%) !important;
+          color: $success;
+        }
+    }
+
+}
+
+.bg-warning{
+    background-color: $warning!important;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($warning, 20%) !important;
+          color: $warning;
+        }
+    }
+
+}
+
+.bg-danger{
+    background-color: $danger!important;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($danger, 20%) !important;
+          color: $danger;
+        }
+    }
+
+}
+
+.bg-light{
+    background-color: #e7e8e9 !important;
+    color: #000000;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($light, 20%) !important;
+          color: $dark;
+        }
+    }
+
+}
+
+
+//Text Colours
+.text-brand{
+    color: $brand-colour !important;
+}
+
+
+.text-sister{
+    color: $sister-colour !important;
+}
+
+.text-brother{
+    color: $brother-colour !important;
+}
+
+.text-other{
+    color: $other-colour !important;
+}

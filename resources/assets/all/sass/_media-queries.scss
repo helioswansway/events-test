@@ -1,0 +1,113 @@
+
+.show-mobile{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .exec-login-panel{
+        background-image: url("/assets/images/bg-login-exec.jpg");
+        background-position: left 0px bottom -72px;
+     }
+
+     .logo-box {
+        height: 50vh !important;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    .mob-text-center{
+        text-align: center!important;
+    }
+
+    .mob-block {
+        display: block;
+        float: none!important;
+
+    }
+
+
+    .sideNav, .sideNave-overlay {
+        left: -300px;
+    }
+
+    .side-nav-full{
+        width: 100%;
+        z-index: 100;
+        left: 0px;
+
+    }
+
+    header.header-nav{
+        .logo{
+            opacity: 1;
+        }
+    }
+
+    .js-side-nav-collapse {
+        left: 16px;
+        display:block;
+        opacity: 10000;
+        z-index: 100000;
+    }
+
+    #mainContent{
+        margin-left: 0px;
+
+        h1{
+            font-size: 150%;
+        }
+    }
+
+    .content{
+        padding: 30px 15px;
+    }
+
+    .mob-px-0{
+        padding-left:0!important;
+        padding-right: 0!important;
+    }
+
+    .mob-py-0{
+        padding-top:0!important;
+        padding-bottom: 0!important;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    .js-btn-nav{
+        left: 180px;
+    }
+
+    .text-left-mob{
+         text-align: left !important;
+    }
+
+    .js-side-nav-collapse {
+        display:block;
+    }
+
+    .main-content-full{
+        padding-left: 0px!important;
+    }
+
+
+    .pop-up-wrapper{
+        position: absolute;
+        height: 100%;
+        .js-pop-up {
+            position: absolute;
+            height: 100%;
+            z-index: 1100000;
+        }
+    }
+
+
+
+}

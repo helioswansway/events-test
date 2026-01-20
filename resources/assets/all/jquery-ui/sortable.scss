@@ -1,0 +1,43 @@
+/*!
+ * jQuery UI Sortable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+.ui-sortable-handle {
+	-ms-touch-action: none;
+    touch-action: none;
+    cursor: move;
+}
+
+.ui-sortable{
+
+     /* Interaction states   ----------------------------------*/
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+
+    /* We use html here because we need a greater specificity to make sure disabled
+    works properly when clicked or hovered */
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        background: lighten($other-colour, 90%)/*{bgColorDefault}*/ /*{bgImgUrlDefault}*/ /*{bgDefaultXPos}*/ /*{bgDefaultYPos}*/ /*{bgDefaultRepeat}*/;
+        border: 1px solid lighten($other-colour, 70%) !important/*{borderColorDefault}*/;
+        font-weight: normal/*{fwDefault}*/;
+        color: $other-colour/*{fcDefault}*/;
+        padding: 0 10px !important;
+        line-height: 40px;
+    }
+
+}
+
+.list-group-item{
+    .btn {
+        margin-top: 7px;
+    }
+}
+

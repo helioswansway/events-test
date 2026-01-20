@@ -1,0 +1,142 @@
+hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.103);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.link{
+    display: inline-block;
+    color: $brand-colour;
+    text-decoration: none;
+
+    &:hover{
+        color: $brand-colour;
+        opacity:0.6;
+        text-decoration: none;
+
+    }
+
+    &.sister{
+        color: $brand-colour;
+    }
+
+    &.brother{
+        color: $brother-colour;
+    }
+
+    &.brand{
+        color: $brand-colour;
+    }
+}
+
+
+.line {
+    display: block;
+    background-color: lighten($sister-colour, 20%);;
+    height: 2px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid lighten($sister-colour, 30%);
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.static{
+    position: static;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.block{
+    width: 100%;
+}
+
+.inline{
+    display:inline!important;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalise{
+    text-transform: capitalize;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.no-cursor{
+    cursor: default !important;
+}
+
+.cursor{
+    cursor:pointer !important;
+}
+
+.line-height-20{line-height:20px !important}
+.line-height-22{line-height:22px !important}
+.line-height-24{line-height:24px !important}
+.line-height-26{line-height:26px !important}
+.line-height-28{line-height:28px !important}
+.line-height-30{line-height:30px !important}
+.line-height-32{line-height:32px !important}
+.line-height-34{line-height:34px !important}
+.line-height-36{line-height:36px !important}
+.line-height-38{line-height:38px !important}
+.line-height-40{line-height:40px !important}
+
+
+.hide{
+    display:none!important;
+    transition: 0.5s;
+}
+
+.show{
+    display:block!important;
+    transition: 0.5s;
+}
+
+.js-display-message{
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    z-index:1000;
+    padding:1.22rem 1rem !important;
+    -webkit-transition:all .5s;
+    transition:all .5s;
+    box-shadow: 0 5px 8px #c1c1c1;
+    text-align: center;
+    font-size: 120%;
+
+    .js-close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+}
+
+.h1-button{
+    right: 0px;
+    bottom: 12px;
+    position:absolute;
+}
+
+

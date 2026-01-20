@@ -1,0 +1,160 @@
+
+.show-mobile{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 992px){
+
+    .show-mobile{
+        display: block;
+    }
+
+    .js-car-interest{
+
+        a{
+            margin-bottom: 10px;
+        }
+    }
+
+    .mob-full-with{
+        width: 100% !important;
+    }
+
+    .book-login-panel{
+
+        background-image: url("/assets/images/bg-login-book.jpg");
+        background-position: left 0px bottom -13px;
+     }
+
+     .logo-box {
+        height: 50vh !important;
+    }
+
+    .sideNav, .sideNave-overlay {
+        left: -300px;
+    }
+
+    .side-nav-full{
+        width: 100%;
+        z-index: 100;
+        left: 0px;
+
+    }
+
+    header.header-nav{
+        .logo{
+            opacity: 1;
+        }
+    }
+
+    .js-side-nav-collapse {
+        left: 16px;
+        display:block;
+        opacity: 10000;
+        z-index: 100000;
+    }
+
+    #mainContent{
+        margin-left: 0px;
+
+        h1{
+            font-size: 150%;
+        }
+    }
+
+    .content{
+        padding: 30px 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+    .btn{
+        width: 100% !important;
+        margin-bottom: 10px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .mob-flex-table {
+        display: table !important;
+
+    }
+
+    .mob-h1{
+        font-size: 150% !important;
+    }
+
+    #calendar{
+        h2{
+            font-size:110% !important;
+        }
+    }
+
+    h2{
+        font-size:140%;
+    }
+
+    .js-time div{
+        padding: 10px !important;
+    }
+    .v-reg{
+
+        span{
+            position: absolute;
+            bottom: 16px;
+            left: 10px;
+            font-weight: bold;
+            transition: 0.8s;
+            font-size: 110%;
+            text-transform: uppercase;
+            color: darken(#ffd307, 20%) !important;
+            z-index:0;
+        }
+
+    }
+
+    .no-part-exchange{
+
+
+        h2{
+            text-align: center;
+        }
+    }
+
+
+    .text-left-mob{
+         text-align: left !important;
+    }
+
+    .js-side-nav-collapse {
+        display:block;
+    }
+
+    .main-content-full{
+        padding-left: 0px!important;
+    }
+
+
+    .pop-up-wrapper{
+        position: absolute;
+        height: 100%;
+        position: absolute;
+        height: 100%;
+        top: 100px;
+        padding: 50px 0;
+        overflow: auto;
+
+        .js-pop-up {
+            position: absolute;
+            height: 100%;
+            z-index: 1100000;
+        }
+    }
+
+
+
+}

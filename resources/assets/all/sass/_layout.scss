@@ -1,0 +1,366 @@
+header.header-nav{
+    background: #FFF;
+    //background: linear-gradient(135deg, #37778f   0%, rgba(43,141,168,0.6166841736694677) 100%);
+    color: #FFF;
+    height: 60px;
+    padding:0 1rem;
+    //box-shadow: 0 10px 10px rgba($brand-colour, 8%);
+
+
+    .logo{
+        position: absolute;
+        top: 23px;
+        left: 15px;
+        opacity: 0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+
+
+        img{
+            width: 70%;
+        }
+    }
+
+}
+
+/*
+/#############################################
+/ Main Content
+/#############################################
+*/
+
+#mainContent{
+    margin-left: 300px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+body{
+    background-color: $body-bg !important;
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+}
+
+.content{
+    padding: 30px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+.display-4 {
+    font-size: 150%;
+    font-family: 'Arimo', sans-serif;
+    color: $brand-colour;
+    padding-bottom: .5rem;
+    margin-top:0rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba($other-colour,.1);
+    position: relative;
+}
+
+.rotate-180{
+    transform: rotate(114deg);
+}
+
+.login-panel, .exec-login-panel, .leaderboard-login-panel,  .book-login-panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+   // background-color: lighten($other-colour, 50%) !important;
+    background-image: url("/assets/images/bg-login-admin.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    box-shadow: 0 0px 16px #d5d5d5;
+
+    a{
+        z-index: 10;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.book-login-panel{
+
+    background-image: url("/assets/images/bg-login-book.jpg");
+    background-position: left -80px bottom;
+ }
+
+.exec-login-panel{
+   background-image: url("/assets/images/bg-login-exec.jpg");
+   background-position: left -80px bottom;
+}
+
+.leaderboard-login-panel{
+    background-image: url("/assets/images/bg-login-exec.jpg");
+    background-position: left -80px bottom;
+ }
+
+.login-overlay{
+    background: rgb(43,141,168);
+    background: linear-gradient(86deg, rgba(43,141,168,0.6923144257703081) 0%, rgba(71,159,184,0.39539565826330536) 80%);
+    z-index: 1;
+    position: fixed;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    width: 50%;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+}
+
+.fixed-icons {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+    top: 30%;
+    right: 0;
+    width: 49px;
+    justify-content: center !important;
+    background-color: $brand-colour;
+    align-items: center;
+
+    i{
+        color: #FFFFFF;
+    }
+
+    .fab{
+        width: 50px;
+        padding: 15px 0;
+        color: #FFFFFF;
+        display:block;
+        border: 1px solid #ffffff;
+        border-bottom: none;
+    }
+
+    a{
+        width: 50px;
+        position: relative;
+        display:block;
+        border-bottom: 1px solid lighten($light, 5%)!important;
+        background-color: lighten($light, 10%);
+
+        img{
+            margin-top: 15px;
+            margin-bottom:15px;
+        }
+
+        &:hover{
+           background-color: lighten($sister-colour, 20%);
+
+          > span {
+                display:block !important;
+            }
+        }
+    }
+
+    a.active{
+        background-color: lighten($sister-colour, 20%);
+        border: 1px solid lighten($light, 5%) !important;
+    }
+
+     span{
+        width: 200px;
+        display:none !important;
+        position: absolute;
+        right: 47px;
+        top:0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: lighten($sister-colour, 20%);
+        color: #FFFFFF;
+    }
+    .edit{
+        background: $brother-colour;
+        padding: 15px 0;
+
+        &:hover{
+            background-color: $brother-colour;
+
+            span{
+                background-color: $brother-colour;
+            }
+         }
+
+
+    }
+
+}
+
+/*
+##############################
+Search Layout
+##############################
+*/
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    border-radius: 120px;
+    margin: 0 auto;
+  }
+
+
+  .search-icon, .go-icon {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 86px;
+    line-height: 61px;
+    text-align: center;
+  }
+
+  .search-icon {
+    top: -2px;
+    left: 0;
+    pointer-events: none;
+    font-size: 1.3em;
+    will-change: transform;
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -webkit-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -moz-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -o-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    color: $brand-colour !important;
+  }
+
+  .si-rotate {
+    top: -1px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+  .go-icon {
+    right: 0px;
+    top: 5px;
+    pointer-events: none;
+    font-size: 2.5em;
+    will-change: opacity;
+    cursor: default;
+    opacity: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -webkit-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -moz-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -o-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+
+  }
+  .go-in {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -webkit-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -moz-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -o-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  }
+
+
+.arrow-right {
+    font-size: 50% !important;
+    position: absolute;
+    top:15px;
+    right: 50px;
+}
+
+  .search-border {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+  }
+  .border {
+    fill: none;
+    stroke: $brother-colour;
+    stroke-width: 5;
+    stroke-miterlimit: 10;
+  }
+  .border {
+    stroke-dasharray: 740;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 400ms cubic-bezier(0.600, 0.040, 0.735, 0.990);
+    -webkit-transition: stroke-dashoffset 400ms cubic-bezier(0.600, 0.040, 0.735, 0.990);
+    -moz-transition: stroke-dashoffset 400ms cubic-bezier(0.600, 0.040, 0.735, 0.990);
+    -o-transition: stroke-dashoffset 400ms cubic-bezier(0.600, 0.040, 0.735, 0.990);
+  }
+  .border-searching .border {
+    stroke-dasharray: 740;
+    stroke-dashoffset: 459;
+    transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
+    -webkit-transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
+    -moz-transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
+    -o-transition: stroke-dashoffset 650ms cubic-bezier(0.755, 0.150, 0.205, 1.000);
+  }
+  #search {
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 120px;
+    border: none;
+    background: rgba(255,255,255,0);
+    padding: 0 68px 0 68px;
+    color: $brand-colour;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    outline: none;
+
+
+
+  }
+  #search::-webkit-input-placeholder {color: $brother-colour;}
+  #search::-moz-placeholder {color: $brother-colour;}
+  #search:-ms-input-placeholder {color: $brother-colour;}
+  #search:-moz-placeholder {color: $brother-colour;}
+  #search::-moz-selection {color: $brother-colour; }
+  #search::selection {color: $brother-colour; }
+
+
+  .search-refresh{
+    position: absolute;
+    right: -36px;
+    top: 10px;
+    font-size: 80%;
+
+    a{
+        color: $brand-colour !important;
+
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+  }
+
+
