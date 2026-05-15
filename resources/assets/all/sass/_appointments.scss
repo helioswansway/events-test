@@ -1,0 +1,227 @@
+.js-appointment-date, .js-time, .js-exec{
+    cursor: pointer !important;
+    background-color: $light;
+    color: $dark;
+    border-radius: 20px;
+    transition: 0.8s;
+    padding:30px 0 ;
+    border:3px solid transparent;
+    text-align: center ;
+    font-weight:bold;
+    opacity:1 !important;
+
+
+    &:hover, &.active{
+        background: $brand-colour;
+        color: #ffffff;
+    }
+
+}
+
+
+.js-exec{
+    padding:8px 0;
+    margin-bottom: 5px;
+}
+
+.js-booked{
+    border-radius: 20px;
+
+    cursor: default;
+    background: lighten($danger, 50%);
+    color: darken($danger, 20%);
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.8s;
+    padding:8px 0;
+    margin-bottom: 5px;
+    border:3px solid transparent;
+    text-align: center;
+    opacity:0.5;
+
+    &:hover{
+        background: lighten($danger, 50%);
+        color: darken($danger, 20%);
+    }
+}
+
+
+
+.js-exec{
+
+    &:hover, &.active{
+        cursor: default;
+        background: $brand-colour !important;
+        color: #ffffff;
+
+    }
+}
+
+.js-select-vehicles{
+
+    img{
+        border:4px solid rgba($brother-colour, 0.2) !important;
+        border-radius:5px;
+        transition: 0.6s;
+        &:hover{
+            border:4px solid $brother-colour !important;
+            box-shadow: 2px 5px 10px rgb(177, 177, 177);
+        }
+    }
+    .active{
+        border:4px solid $sister-colour !important;
+        box-shadow: 2px 5px 10px rgb(177, 177, 177);
+
+        &:hover{
+            border:4px solid $sister-colour !important;
+        }
+    }
+}
+
+/**
+Part exchage Styles
+*/
+.v-reg{
+    position:relative;
+    background: #ffd307;
+    border: 1px solid darken(#ffd307, 5%);
+    padding: 0.8rem;
+    margin-bottom: 35px;
+    border-radius: 10px;
+
+    span{
+        position: absolute;
+        bottom: 16px;
+        left: 10px;
+        font-weight: bold;
+        transition: 0.8s;
+        font-size: 150%;
+        text-transform: uppercase;
+        color: darken(#ffd307, 20%) !important;
+        z-index:0;
+    }
+
+    .slide-up{
+        bottom: 80px!important;
+        left: 0px!important;
+        color:#000 !important;
+        font-size:100%!important;
+        width: 100%;
+    }
+
+
+    input[type=text]{
+        border: none;
+        background-color: transparent;
+        border-radius: 0!important;
+        display: block;
+        border-bottom:1px solid darken(#ffd307, 20%)!important;
+        padding: 5px;
+        width: 100%;
+        outline: none;
+        transition: .2s;
+        font-weight: bold;
+        font-size: 150%;
+        text-transform: uppercase;
+        font-family: arial, verdana;
+        position: relative;
+        z-index: 1;
+    }
+
+    input[type=text]:focus  {
+        border-bottom:2px solid #000!important;
+    }
+
+    input::placeholder {
+
+    }
+}
+
+
+.v-make, .v-mileage{
+    position: relative;
+    margin-bottom: 2rem;
+
+    span{
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        font-weight: bold;
+        transition: 0.5s;
+        z-index: 0;
+    }
+
+    input[type=text]{
+        border: none;
+        border-radius: 0!important;
+        background: transparent;
+        display: block;
+        border-bottom:1px solid darken($light, 20%)!important;
+        padding: 5px 0 0 0!important;
+        width: 100%;
+        outline: none !important;
+        transition: .2s;
+        font-weight: bold;
+        font-size: 100%;
+        text-transform: uppercase;
+        font-family: arial, verdana;
+        box-shadow: none !important;
+        line-height: 16px !important;
+        position: relative;
+        z-index: 1;
+    }
+
+    input[type=text]:focus  {
+        border-bottom:2px solid #000!important;
+    }
+}
+
+.slide-up{
+    bottom: 30px!important;
+    left: 0px!important;
+    color:#444;
+    font-size:90%;
+}
+
+.show-btn{
+    display: block !important;
+    transition: 0.5s;
+}
+
+.no-part-exchange{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    h2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(243, 243, 243);
+        border-radius: 7px;
+        border: 5px solid $brand-colour;
+        cursor: pointer;
+        padding: 1rem;
+        transition: 1s;
+        color: #000;
+        font-family: arial, verdana;
+        font-weight: bold !important;
+        box-shadow: 0 0 30px #939393;
+
+        &:hover{
+            background: #FFFFFF;
+            border: 5px solid $sister-colour;
+            color: $sister-colour;
+        }
+
+        &.active{
+            background: #FFFFFF;
+            border: 5px solid $sister-colour;
+            color: $sister-colour;
+        }
+    }
+
+}
+

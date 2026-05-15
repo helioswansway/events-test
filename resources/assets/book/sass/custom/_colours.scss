@@ -1,0 +1,97 @@
+.bg-brand{
+
+    background-color: $brand-colour;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($brand-colour, 30%) !important;
+          color: $brand-colour;
+        }
+    }
+}
+
+.bg-sister{
+    background-color: $sister-colour;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($sister-colour, 30%) !important;
+          color: $sister-colour;
+        }
+
+    }
+}
+
+.bg-brother{
+    background-color: $brother-colour;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($brother-colour, 30%) !important;
+          color: $brother-colour;
+        }
+    }
+
+}
+
+.bg-other{
+    background-color: $other-colour;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($other-colour, 20%) !important;
+          color: $other-colour;
+        }
+    }
+
+}
+
+.bg-success{
+    background-color: $success;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($success, 20%) !important;
+          color: $success;
+        }
+    }
+
+}
+
+.bg-warning{
+    background-color: $warning;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($warning, 20%) !important;
+          color: $warning;
+        }
+    }
+
+}
+
+.bg-danger{
+    background-color: $danger;
+    color: #FFF;
+
+    &.btn{
+
+        &:hover{
+          background-color: rgba($danger, 20%) !important;
+          color: $danger;
+        }
+    }
+
+}

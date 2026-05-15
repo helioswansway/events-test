@@ -1,0 +1,6 @@
+customer_number,dealership_code,title,name,surname,address_1,address_2,address_3,address_4,address_5,post_code,vehicle_reg,vehicle_description,home_phone,mobile,email
+2000,065,mr,Helio,Smith,7 Andrew Mulligan Close,,,,,ST6 5XF,DA16FLU,,,,h.pindrte@hotmail.com
+2001,065,mr,Dave,Smith,7 Andrew Mulligan Close,,,,,ST6 5XF,DA126FLU,,,,h.pidnrte@hotmail.com
+2002,065,mr,Eduard,Smith,7 Andrew Mulligan Close,,,,,ST6 5XF,DA216FLU,,,,h.pdinrte@hotmail.com
+2003,065,mr,Orlando,Smith,7 Andrew Mulligan Close,,,,,ST6 5XF,DA1226FLU,,,,h.pinrted@hotmail.com
+2004,065,mr,John,Smith,7 Andrew Mulligan Close,,,,,ST6 5XF,DA2216FLU,,,,h.pinrte@hotmail.com

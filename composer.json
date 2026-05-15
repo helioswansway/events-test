@@ -1,0 +1,92 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.3.6",
+        "ext-curl": "*",
+        "bitfumes/laravel-multiauth": "dev-master",
+        "consoletvs/charts": "^6.5",
+        "fakerphp/faker": "^1.9.1",
+        "fideloper/proxy": "^4.2",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.7",
+        "laravel/fortify": "^1.16",
+        "laravel/framework": "^9.0",
+        "laravel/scout": "^9.6",
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.4",
+        "league/flysystem-aws-s3-v3": "^3.29",
+        "maatwebsite/excel": "^3.1",
+        "openspout/openspout": "^4.30",
+        "phpmailer/phpmailer": "^6.10.0",
+        "rap2hpoutre/laravel-log-viewer": "^2.2",
+        "spatie/laravel-backup": "^8.2",
+        "spatie/laravel-permission": "^5.7",
+        "spatie/simple-excel": "^3.7.3"
+    },
+    "require-dev": {
+        "spatie/ignition": "^1.4",
+        "laravel/sail": "^1.19",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.3",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "files": [
+            "app/Helpers/Notification.php",
+            "app/Helpers/EmailNotification.php",
+            "app/Helpers/Helper.php",
+            "app/Helpers/Calendar.php",
+            "app/Helpers/HelperAdmin.php",
+            "app/Helpers/HelperLeaderboard.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:nexuspointltd/laravel-multiauth.git"
+        }
+    ],
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

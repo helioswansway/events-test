@@ -1,0 +1,67 @@
+input::placeholder, textarea::placeholder {
+    color: rgba($other-colour, 0.35) !important;
+    font-weight: normal !important;
+    font-size: 100% !important;
+
+}
+
+//hides placeholder text on click
+input:focus::-webkit-input-placeholder { color:transparent !important; }
+input:focus:-moz-placeholder { color:transparent !important; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent !important; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent !important; } /* IE 10+ */
+
+textarea:focus::-webkit-input-placeholder { color:transparent !important; }
+textarea:focus:-moz-placeholder { color:transparent !important; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent !important; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent !important; } /* IE 10+ */
+
+
+//Error form styles
+input.error, textarea.error, select.error{
+    border: 1px solid $danger;
+    background: #f667621f;
+}
+
+input.valid, textarea.valid{
+    border: 1px solid #a8be40b0;
+    background: #ebefca4a;
+}
+
+label.error{
+    color: $danger;
+    margin-top: 5px;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.form-check-input{
+
+    margin-top: -3px!important;
+    margin-left: 5px!important;
+    margin-right: 15px!important;
+    position: relative  !important;
+    float: none  !important;
+    padding: 10px !important;
+    border: 5px solid rgba($primary, 0.3)
+}
+
+.form-check-input:checked[type=checkbox] {
+    border: 5px solid rgba(#FFFFFF, 0.2)!important;
+}
+
+//View Password
+.js-toggle-password, .js-toggle-password-confirm{
+    position:absolute;
+    top: 40px;
+    right: 15px;
+    cursor: pointer;
+    color: #003158;
+
+    &:hover, &.active{
+        color: #f36e35;
+    }
+}
+

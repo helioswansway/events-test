@@ -1,0 +1,422 @@
+.btn{
+    border-radius: 0;
+    text-decoration: none;
+}
+
+.btn-default{
+    padding: 0.3rem 1.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: 1s;
+    background: #FFF!important;
+
+    &.brand{
+        background: $brand-colour;
+        color: #FFF!important;
+
+        &:hover{
+            background: lighten($brand-colour, 20%);
+            color: #FFF!important;
+        }
+    }
+
+    &.sister{
+        background: $sister-colour;
+        color: #fff !important;
+
+        &:hover{
+            background:lighten($sister-colour, 20%);
+            color: #FFF!important;
+        }
+    }
+
+    &.brother{
+        background: $brother-colour;
+        color: $brand-colour !important;
+
+        &:hover{
+            background: darken($brother-colour, 10%) !important;
+            color: #FFF !important;
+        }
+    }
+
+    &.danger{
+        background: $danger;
+        color: #FFF!important;
+
+        &:hover{
+            background: lighten($danger, 20%);
+            color: #FFF!important;
+        }
+    }
+
+    &.warning{
+        background: $warning;
+        color: #FFF!important;
+
+        &:hover{
+            background: lighten($warning, 20%);
+            color: #FFF!important;
+        }
+    }
+
+    &.success{
+        background: $success;
+        color: #FFF!important;
+
+        &:hover{
+            background: lighten($success, 20%);
+            color: #FFF!important;
+        }
+    }
+
+    &.info{
+        background: $info;
+        color: #FFF!important;
+
+        &:hover{
+            background: lighten($info, 20%);
+            color: #FFF!important;
+        }
+    }
+
+    &.light{
+        background: $light;
+        color: $other-colour!important;
+        font-weight: normal;
+        border: 1px solid $light;
+
+        &:hover{
+            background: lighten($light, 8%);
+            color: $other-colour!important;
+            //border: 1px solid $light;
+        }
+    }
+
+
+    &.dark{
+        background: $dark;
+        color: $light;
+        font-weight: normal;
+        border: 1px solid lighten($dark, 8%);
+
+        &:hover{
+            background: lighten($dark, 8%);
+            color: $light;
+            //border: 1px solid $light;
+        }
+    }
+
+
+
+}
+
+.btn-border{
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 1s;
+    background: #FFF;
+
+    &.brand{
+        border: 1px solid $brand-colour;
+        color: $brand-colour;
+
+        &:hover{
+            background: $brand-colour;
+            color: #FFF;
+        }
+    }
+
+    &.sister{
+        border: 1px solid $sister-colour;
+        color: $sister-colour;
+
+        &:hover{
+            background: $sister-colour;
+            color: #FFF;
+        }
+    }
+
+    &.brother{
+        border: 1px solid $brother-colour;
+        color: $brother-colour;
+
+        &:hover{
+            background: $brother-colour;
+            color: #FFF;
+        }
+    }
+    &.danger{
+        border: 1px solid $danger;
+        color: $danger;
+
+        &:hover{
+            background: $danger;
+            color: #FFF;
+        }
+    }
+    &.success{
+        border: 1px solid $success;
+        color: $success;
+
+        &:hover{
+            background: $success;
+            color: #FFF;
+        }
+    }
+    &.warning{
+        border: 1px solid $warning;
+        color: $brother-colour;
+
+        &:hover{
+            background: $warning;
+            color: #FFF;
+        }
+    }
+    &.info{
+        border: 1px solid $info;
+        color: $info;
+
+        &:hover{
+            background: $info;
+            color: #FFF;
+        }
+    }
+
+    &.light{
+        border: 1px solid $light;
+        color: $other-colour;
+
+        &:hover{
+            background: $light;
+            color: $other-colour;
+        }
+    }
+
+    &.dark{
+        border: 1px solid $dark;
+        color: $dark;
+
+        &:hover{
+            background: $dark;
+            color: #FFF;
+        }
+    }
+
+}
+
+.btn-action{
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 1s;
+
+    &.brand{
+        background: $brand-colour;
+        color: #FFF;
+
+        &:hover{
+            background: lighten($brand-colour, 20%);
+            color: #FFF;
+        }
+    }
+
+    &.sister{
+        background: $sister-colour;
+        color: #fff;
+
+        &:hover{
+            background:lighten($sister-colour, 20%);
+            color: #FFF;
+        }
+    }
+
+    &.brother{
+        background: $brother-colour;
+        color: #FFF;
+
+        &:hover{
+            background: lighten($brother-colour, 20%);
+            color: #FFF;
+        }
+    }
+
+    &.danger{
+        background: $danger;
+        color: #FFF;
+
+        &:hover{
+            background: lighten($danger, 20%);
+            color: #FFF;
+        }
+    }
+
+    &.success{
+        background: $success;
+        color: #FFF;
+
+        &:hover{
+            background: lighten($success, 20%);
+            color: #FFF;
+        }
+    }
+
+    &.warning{
+        background: $warning;
+        color: #FFF;
+
+        &:hover{
+            background: lighten($warning, 20%);
+            color: #FFF;
+        }
+    }
+
+    &.info{
+        background: $info;
+        color: #FFF;
+
+        &:hover{
+            background: lighten($info, 20%);
+            color: #FFF;
+        }
+    }
+
+
+    &.light{
+        background: $light;
+        color: #000;
+
+        &:hover{
+            background: darken($light, 20%);
+            color: #000;
+        }
+    }
+
+    &.dark{
+        background: $dark;
+        color: #FFF;
+
+        &:hover{
+            background: darken($dark, 20%);
+            color: #FFF;
+        }
+    }
+
+}
+
+
+.btn-brand{
+
+    background-color: $brand-colour;
+    border-color: darken($brand-colour, 10%);
+    color: #FFF;
+
+    &:hover{
+        background-color: darken($brand-colour, 5%);
+        color: lighten($brand-colour, 15%);
+    }
+}
+
+.btn-warning{
+    background: $warning;
+    border: 1px solid lighten($warning, 10%);
+    color: #FFF;
+
+    &:hover{
+
+        background: lighten($warning, 10%);
+        border: 1px solid lighten($warning, 10%);
+    }
+}
+
+.btn-info{
+    background: $info;
+
+    &:hover{
+        background: darken($info, 10%);
+    }
+}
+
+.btn-primary{
+    background: $sister-colour;
+    border: 1px solid lighten($sister-colour, 10%);
+
+    &:hover{
+
+        background: lighten($sister-colour, 10%);
+        border: 1px solid lighten($sister-colour, 10%);
+    }
+}
+
+.btn-warning:focus, .btn-warning.focus {
+    box-shadow: 0 0 0 0.2rem rgba(183,145,77,0.5);
+}
+
+.btn-danger{
+    background: $danger;
+    border: 1px solid lighten($danger, 10%);
+
+    &:hover{
+
+        background: lighten($danger, 10%);
+        border: 1px solid lighten($danger, 10%);
+    }
+}
+
+.btn-danger:focus, .btn-danger.focus {
+    box-shadow: 0 0 0 0.2rem rgba(148, 10, 10, 0.5);
+}
+
+
+.btn-enquire {
+    left: 15px;
+    right: 15px;
+    border-radius: 0;
+    text-align: center;
+    background: $warning;
+    color: #111;
+
+    &:hover{
+        background: lighten($warning, 10%);
+        color: #111;
+    }
+
+}
+
+.btn-dark{
+    color: #FFF;
+
+    &:hover{
+        color: rgb(128, 128, 128);
+    }
+}
+
+.js-btn-holder {
+    position: fixed;
+    top:85px;
+    right: 15px;
+    z-index: 10;
+    padding: .22rem 1rem !important;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+
+    .btn{
+        border-radius: 0;
+        -webkit-transition: all .8s;
+        transition: all .8s;
+      }
+
+}
+
+.js-btn-stick {
+    top: 0px;
+    right: 30px;
+    padding: 0rem !important;
+
+    .btn{
+      border-radius: 0 0 5px 5px;
+    }
+
+}
+
